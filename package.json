@@ -9,7 +9,7 @@
   "keywords": [],
   "repository": "https://github.com/thomassloboda/versionning",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/thomassloboda/versionning"
+    "registry": "https://npm.pkg.github.com/thomassloboda"
   },
   "author": "",
   "license": "ISC",
