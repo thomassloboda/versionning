@@ -10,9 +10,6 @@
   "repository": {
     "url": "git+https://github.com/thomassloboda/versionning.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
