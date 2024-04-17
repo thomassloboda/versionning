@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "repository": "https://github.com/thomassloboda/versionning",
+  "repository": {
+    "url": "https://github.com/thomassloboda/versionning",
+    "type": "git"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/thomassloboda"
   },
