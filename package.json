@@ -11,7 +11,7 @@
     "url": "git+https://github.com/thomassloboda/versionning.git"
   },
   "publishConfig": {
-    "registry": "https://github.com/thomassloboda/versionning"
+    "registry": "https://npm.pkg.github.com/"
   },
   "author": "",
   "license": "ISC",
