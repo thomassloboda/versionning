@@ -7,12 +7,8 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
-    [
-      "@semantic-release/exec",
-      {
-        "verifyReleaseCmd": "npm --no-git-tag-version version ${nextRelease.version}",
-        "publishCmd": ".github/scripts/semantic-release-publish.sh \"chore(release): ${nextRelease.version} [skip ci]\" \"versioning\""
-      }
-    ]
+    "@semantic-release/github",
+    "@semantic-release/git",
+    "@semantic-release/npm"
   ]
 }
