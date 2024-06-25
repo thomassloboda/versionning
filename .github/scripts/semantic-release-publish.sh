@@ -12,7 +12,7 @@ export CONTENT=$( base64 -i $FILE_TO_COMMIT )
 
 echo "/repos/thomassloboda/$REPO/contents/$FILE_TO_COMMIT"
 
-gh api --method PUT /repos/thomassloboda/$REPO/contents/$FILE_TO_COMMIT \
+gh api --method PUT -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/thomassloboda/$REPO/contents/$FILE_TO_COMMIT \
   --field message="$MESSAGE" \
   --field content="$CONTENT" \
   --field encoding="base64" \
@@ -20,10 +20,10 @@ gh api --method PUT /repos/thomassloboda/$REPO/contents/$FILE_TO_COMMIT \
   --field sha="$SHA"
 
 echo "/repos/thomassloboda/$REPO/git/tags"
-TAG_SHA=$(gh api -X POST /repos/thomassloboda/$REPO/git/tags -f tag="$VERSION" -f message="Tag for version $VERSION" -f object="$LAST_COMMIT_SHA" -f type='commit' | jq -r .sha)
+TAG_SHA=$(gh api -X POST -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/thomassloboda/$REPO/git/tags -f tag="$VERSION" -f message="Tag for version $VERSION" -f object="$LAST_COMMIT_SHA" -f type='commit' | jq -r .sha)
 
 echo "/repos/thomassloboda/$REPO/git/refs"
-gh api -X POST /repos/thomassloboda/$REPO/git/refs -f ref="refs/tags/$VERSION" -f sha="$TAG_SHA"
+gh api -X POST -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/thomassloboda/$REPO/git/refs -f ref="refs/tags/$VERSION" -f sha="$TAG_SHA"
 
 echo "/repos/thomassloboda/$REPO/git/releases"
-gh api -X POST /repos/thomassloboda/$REPO/releases -f tag_name="$VERSION" -f name="$VERSION" -f body="This is a release of version $VERSION"
+gh api -X POST -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/thomassloboda/$REPO/releases -f tag_name="$VERSION" -f name="$VERSION" -f body="This is a release of version $VERSION"
