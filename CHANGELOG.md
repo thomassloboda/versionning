@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/thomassloboda/versionning/compare/v1.5.0...v1.6.0) (2024-06-25)
+
+
+### Features
+
+* **noop:** update nothing ([15784c2](https://github.com/thomassloboda/versionning/commit/15784c2ff12271f410a5391e1be6f43d151a88b3))
+
 # [1.5.0](https://github.com/thomassloboda/versionning/compare/v1.4.0...v1.5.0) (2024-06-25)
 
 
