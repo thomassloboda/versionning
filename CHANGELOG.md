@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/thomassloboda/versionning/compare/v1.4.0...v1.5.0) (2024-06-25)
+
+
+### Features
+
+* **ci:** update registry ten ([b965f16](https://github.com/thomassloboda/versionning/commit/b965f162b35502e763866417db88a6772790c1d8))
+
 # 1.0.0 (2024-04-17)
 
 
