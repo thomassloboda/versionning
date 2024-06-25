@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/thomassloboda/versionning/compare/v1.7.0...v1.8.0) (2024-06-25)
+
+
+### Features
+
+* **ci:** update registry ten ([9b400b4](https://github.com/thomassloboda/versionning/commit/9b400b48945b2ced068e39048d805cabcbf5d473))
+
 # [1.7.0](https://github.com/thomassloboda/versionning/compare/v1.6.0...v1.7.0) (2024-06-25)
 
 
